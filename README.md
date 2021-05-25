@@ -1,6 +1,8 @@
 Вашему вниманию представлена библиотека PySimpleGUI
 Ниже есть описание двух программ, которые были написали с помощью этой библиотеки
 
+pip install PySimpleGUI
+
 <h1>1. Игра "Угадай число"</h1>
 
 ![1](https://github.com/Orientir/PySimpleGUI/raw/master/images/guess_1.png)
