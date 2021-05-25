@@ -2,7 +2,7 @@ import PySimpleGUI as sg
 import random
 
 '''
-    App that shows "how fonts work in PySimpleGUI".
+    App that shows game "Guess Number".
 '''
 
 number = random.randint(1, 10)
@@ -75,7 +75,7 @@ def start(num):
         
 
 sg.theme('dark blue 14')
-window = sg.Window('Угадай число', layout)
+window = sg.Window('Угадай число', icon='images/numbers.ico').Layout(layout)
 
 while True:
     event, values = window.read()

@@ -3,7 +3,6 @@ import requests
 
 
 response = requests.get("https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=5")
-print(response.json())
 def get_buy(obj):
   return obj.get('buy')
 
@@ -34,7 +33,7 @@ def get_json_rub(obj, window):
   window.FindElement('-rub_sell-').Update(get_sell(obj))
     
 
-window = sg.Window('Курс валют - Приват Банк', layout, use_custom_titlebar=True)
+window = sg.Window('Курс валют - Приват Банк', icon='images/logo_exchange_rates.ico').Layout(layout)
 if response.status_code == 200:
   while True:
     event, values = window.read()
